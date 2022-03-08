@@ -1,3 +1,16 @@
 body {
 font-size: 200%;
 }
+
+.carousel-image {
+    height: 500px;
+}
+
+.carousel-arrow {
+    color: ;
+}
+
+.container {
+    color: white;
+    background-color: orangered;
+}
