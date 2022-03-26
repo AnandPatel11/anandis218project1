@@ -46,7 +46,13 @@ def test_request_page4(client):
     assert response.status_code == 200
     assert b"Continuous Integration and Deployment" in response.data
 
+def test_request_page4(client):
+    """This makes the index page"""
+    response = client.get("/page4")
+    assert response.status_code == 200
+    assert b"OOP" in response.data
+
 def test_request_page_not_found(client):
     """This makes the index page"""
-    response = client.get("/page5")
+    response = client.get("/page6")
     assert response.status_code == 404
